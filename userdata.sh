@@ -32,7 +32,7 @@ cd /home/ec2-user/apps/
 git clone https://github.com/tw0316/nobl-deed-storefront.git
 
 # SWITCH TO THE PROJECT DIRECTORY AND INSTALL DEPENDENCIES
-cd nobl-deed-storefront
+cd /home/ec2-user/apps/nobl-deed-storefront
 npm install
 
 # START THE APPLICATION USING PM2 (adjust the command if needed)
