@@ -22,6 +22,10 @@ pm2 --version
 # INSTALL amazon-efs-utils for EFS mounting
 dnf install -y amazon-efs-utils
 
+# Install python3-pip and botocore (required for EFS mounting)
+dnf install -y python3-pip
+pip3 install botocore
+
 # Create mount directory for EFS and mount it using your EFS ID
 mkdir -p /mnt/efs/uploads
 mount -t efs fs-0c8891c9eefc53d04:/ /mnt/efs/uploads
