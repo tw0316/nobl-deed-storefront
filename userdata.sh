@@ -23,8 +23,8 @@ pm2 --version
 dnf install -y amazon-efs-utils
 
 # Create mount directory for EFS and mount it using your EFS ID
-mkdir -p /mnt/efs/uploads
-mount -t efs fs-0c8891c9eefc53d04:/ /mnt/efs/uploads
+mkdir -p /mnt/efs/assets
+sudo mount -t efs fs-0c8891c9eefc53d04:/ /mnt/efs/assets
 
 # CLONE YOUR GITHUB REPOSITORY
 mkdir -p /home/ec2-user/apps
