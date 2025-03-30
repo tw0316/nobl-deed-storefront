@@ -36,6 +36,7 @@ cd nobl-deed-storefront
 npm install
 
 # START THE APPLICATION USING PM2 (adjust the command if needed)
+cd /home/ec2-user/apps/nobl-deed-storefront
 pm2 start npm --name "nobl-deed-storefront" -- run start
 
 # CONFIGURE NGINX AS A REVERSE PROXY
